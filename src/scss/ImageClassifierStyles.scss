@@ -1,0 +1,53 @@
+h1 {
+  margin: 0 0 1.4rem;
+}
+
+.ImageClassifier {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// .ImageClassifier > div:not(.webcam-container) {
+//   background-color: #eff6fe;
+//   width: 300px;
+//   padding: 10px 50px;
+// }
+
+.ImageClassifier {
+  ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    background-color: #dfeeff;
+  }
+  li {
+    padding: 1rem;
+    &:nth-of-type(odd) {
+      background-color: #d9dee2;
+    }
+  }
+}
+
+div.loader {
+  animation: loader-spin infinite 1.2s linear;
+  padding: 0;
+  background-color: transparent !important;
+  height: 50px;
+  width: 50px;
+  border: 5px solid #eee;
+  border-bottom: 5px solid #007bff;
+  border-radius: 50% !important;
+  margin: 2rem;
+}
+
+@keyframes loader-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
