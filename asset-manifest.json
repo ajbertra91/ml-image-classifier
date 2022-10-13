@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ml-image-classifier/static/css/main.de58bb04.css",
-    "main.js": "/ml-image-classifier/static/js/main.1d61099e.js",
+    "main.js": "/ml-image-classifier/static/js/main.ee2a27bb.js",
     "index.html": "/ml-image-classifier/index.html",
     "main.de58bb04.css.map": "/ml-image-classifier/static/css/main.de58bb04.css.map",
-    "main.1d61099e.js.map": "/ml-image-classifier/static/js/main.1d61099e.js.map"
+    "main.ee2a27bb.js.map": "/ml-image-classifier/static/js/main.ee2a27bb.js.map"
   },
   "entrypoints": [
     "static/css/main.de58bb04.css",
-    "static/js/main.1d61099e.js"
+    "static/js/main.ee2a27bb.js"
   ]
 }
