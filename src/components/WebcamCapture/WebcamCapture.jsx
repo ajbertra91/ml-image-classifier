@@ -2,13 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Webcam from "react-webcam";
 import { MdCameraswitch } from 'react-icons/md';
 
-const videoConstraints = {
-  width: 1280,
-  height: 720,
-  facingMode: "user", // || { exact: "environment" }
-  mirror: true
-};
-
 export const WebcamCapture = ({postCaptureCb, ...props}) => {
   const webcamRef = React.useRef(null);
   const [image, setImage] = useState('');
@@ -16,6 +9,13 @@ export const WebcamCapture = ({postCaptureCb, ...props}) => {
   const [isImageCaptured, setIsImageCaptured] = useState(false);
   const [height] = useState(450);
   const [width] = useState(800);
+
+  const videoConstraints = {
+    width: 1280,
+    height: 720,
+    facingMode: facingMode,
+    mirror: true
+  };
 
   const capture = React.useCallback(
     () => {
